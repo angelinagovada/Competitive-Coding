@@ -1,8 +1,7 @@
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
 
-        print(s)
-        print(t)
+        ''' BRUTE FORCE kinda'''
 
         if(len(s)==len(t)):
             t1 = [i for i in t]
@@ -19,4 +18,12 @@ class Solution:
 
 
         return True
+
+        
+
+        #CAN USE HASH MAP 
+
+
+
+
         
