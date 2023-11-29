@@ -1,5 +1,9 @@
 class Solution:
     def longestPalindrome(self, s: str) -> str:
+
+        
+
+
         ans={}
         n = len(s)
 
@@ -13,6 +17,39 @@ class Solution:
         print(ans)
 
         return ans[max(ans)]
+
+        '''
+
+        n = len(s)
+        i = j = n//2
+        
+        if(s==s[::-1]):
+            return s
+        elif(n%2!=0):
+            while(j<n and i!=0 and s[i]==s[j]):
+                i=i-1
+                j=j+1
+                if(s[i]!=s[j]):
+                    return s[i+1:j]
+        else:
+            i=i-1
+            while(j<n and i!=0 and s[i]==s[j]):
+                i=i-1
+                j=j+1
+                if(s[i]!=s[j]):
+                    return s[i+1:j]
+
+        return s[0]
+
+        '''
+
+                
+            
+
+            
+
+
+
 
 
     
