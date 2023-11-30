@@ -12,10 +12,8 @@ class Solution:
             else:
                 c=1
 
-        ans = max(ans,c)
+        return max(ans,c)
 
-
-        return ans
 
 
         
