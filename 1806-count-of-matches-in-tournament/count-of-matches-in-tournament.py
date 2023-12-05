@@ -7,11 +7,11 @@ class Solution:
                 n = n//2 
                 c = c+n 
                 n = n + 1
-                print(n)
+                #print(n)
             else:
                 n = n//2 
                 c = c+n
-                print(n)
+                #print(n)
                 
         
         return c
