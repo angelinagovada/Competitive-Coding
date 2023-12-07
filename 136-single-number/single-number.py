@@ -1,11 +1,11 @@
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
       u = set(nums)
+      ans = {}
       for i in u:
-        x = nums.count(i)
-        if x==1:
-          print(nums)
-          return i
+        ans[nums.count(i)] = i
+
+      return ans[1]
 
       return ""
         
