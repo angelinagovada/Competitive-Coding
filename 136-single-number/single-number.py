@@ -7,13 +7,5 @@ class Solution:
           print(nums)
           return i
 
-          '''
-        else:
-          #nums.remove(i)
-          nums = list(filter(lambda a: a != i, nums))
-
-          print(nums)
-          '''
-
       return ""
         
