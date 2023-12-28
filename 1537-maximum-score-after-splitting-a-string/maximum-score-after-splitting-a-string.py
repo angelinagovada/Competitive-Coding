@@ -1,5 +1,7 @@
 class Solution:
     def maxScore(self, s: str) -> int:
+
+        ### BRUTE FORCE ###
         N = len(s)
         Count0 = 0
         Count1 = 0
@@ -14,10 +16,10 @@ class Solution:
 
             ans = max(ans, Count0+Count1)
 
-            
-
-
         return ans
+
+
+        ### Much better solution is at 26ms submission
 
         
         
