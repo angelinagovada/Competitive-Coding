@@ -1,17 +1,15 @@
 class Solution:
     def isSubsequence(self, s: str, t: str) -> bool:
         t = [ i for i in t]
-        ans =  "true"
-
-
+        
         for j in s:
-            print("j: ",j)
+            #print("j: ",j)
             if (j not in t):
                 return False
             else:
                 k = t.index(j)
                 t = t[k+1:]
-                print("t: ",t)
+                #print("t: ",t)
 
         return True
         
