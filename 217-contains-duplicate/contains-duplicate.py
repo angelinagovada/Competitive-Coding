@@ -1,3 +1,5 @@
+'''
+
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool: 
         ans = False
@@ -15,4 +17,25 @@ class Solution:
         
         return ans
 
-        
+        '''
+
+'''
+class Solution:
+    def containsDuplicate(self, nums: List[int]) -> bool: 
+        #ans = False
+        HashSet = set()
+
+        for i in nums:
+            if i not in nums:
+                HashSet.add(i)
+            else:
+                return True
+
+        return False  
+
+'''
+
+class Solution:
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        return (len(nums) != len(set(nums)))
+
