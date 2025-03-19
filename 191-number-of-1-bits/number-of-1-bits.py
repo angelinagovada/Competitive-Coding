@@ -1,6 +1,10 @@
 class Solution:
     def hammingWeight(self, n: int) -> int:
-        #print(bin(n))
-        x = bin(n)
-        m = [i for i in str(x)]
-        return m.count('1')
+        n1 = bin(n)
+        res=0
+        for i in n1:
+            if i=='1':
+                res+=1
+
+        return res
+
